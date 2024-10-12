@@ -1,4 +1,5 @@
 import React from 'react';
+import './TravelSection.css';
 import trainImage from '../../assets/train.png';
 import hotelImage from '../../assets/hotel.png';
 import worldwideImage from '../../assets/worldwide (1).png';

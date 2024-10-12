@@ -1,6 +1,6 @@
 import React from "react";
 import '@dotlottie/player-component'; // استيراد المكتبة
-
+import './VidioSection.css';
 const VideoSection = () => {
     return (
         <section className="video_area">

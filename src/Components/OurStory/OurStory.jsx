@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './OurStory.css';
 import Img1 from '../../assets/1.png';
 import Img2 from '../../assets/2.png';
 const OurStory = () => {

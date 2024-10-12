@@ -1,3 +1,4 @@
+import './PhotoSection.css';
 const PhotoSection = () => {
     return (
         <section className="photo">
