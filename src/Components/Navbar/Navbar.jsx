@@ -12,9 +12,9 @@ const NavBar = ()=>{
         console.log(toggleMenu)
     }
 
-    function handleToggledMenu(){
-        return (({toggleMenu})=>({display: toggleMenu? "flex":"none"}))
-    }
+    // function handleToggledMenu(){
+    //     return (({toggleMenu})=>({display: toggleMenu? "flex":"none"}))
+    // }
 
 
     return(
@@ -28,19 +28,19 @@ const NavBar = ()=>{
             <div className="nav-part2">
                 <ul id="nav-list">
                     <li>
-                        <NavLink href="home.html">Home</NavLink>
+                        <NavLink to="Home">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink href="about.html">About</NavLink>
+                        <NavLink to="About">About</NavLink>
                     </li>
                     <li>
-                        <NavLink href="destination.html">Destination</NavLink>
+                        <NavLink to="Destination">Destination</NavLink>
                     </li>
                     <li>
-                        <NavLink href="feedback.html">Feedback</NavLink>
+                        <NavLink to="Feedback">Feedback</NavLink>
                     </li>
                     <li>
-                        <NavLink href="contact.html">Contact</NavLink>
+                        <NavLink to="Contact">Contact</NavLink>
                     </li>
                 </ul>
                 <div className="nav-phone-number">
@@ -51,17 +51,17 @@ const NavBar = ()=>{
 
             <div className="nav-part3" id="nav-part3">
                 <div className="nav-red-button">
-                    <NavLink href="./home.html#search-section">
+                    <NavLink to="Home#search-section">
                     <FaSearch className="nav-btn-text" />
                     </NavLink>
                 </div>
                 <div className="nav-red-button">
-                    <NavLink href="login.html" className="nav-btn-text">Login</NavLink>
+                    <NavLink to="Login" className="nav-btn-text">Login</NavLink>
                 </div>
 
             </div>
 
-            <div className="toggle" onClick={ToggledMenu} style={()=>{handleToggledMenu()}}>
+            <div className="toggle" onClick={ToggledMenu} /*style={()=>{handleToggledMenu()}}*/>
             <FaBars />
 
             </div>
@@ -70,22 +70,22 @@ const NavBar = ()=>{
         <div id="toggled-menu">
             <ul className="toggled-menu-list">
                 <li className="toggled-menu-item">
-                    <NavLink href="home.html" className="toggled-menu-item-text">Home</NavLink>
+                    <NavLink to="Home" className="toggled-menu-item-text">Home</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink href="about.html" className="toggled-menu-item-text">About</NavLink>
+                    <NavLink to="About" className="toggled-menu-item-text">About</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink href="destination.html" className="toggled-menu-item-text">Destination</NavLink>
+                    <NavLink to="Destination" className="toggled-menu-item-text">Destination</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink href="feedback.html" className="toggled-menu-item-text">Feedback</NavLink>
+                    <NavLink to="Feedback" className="toggled-menu-item-text">Feedback</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink href="contact.html" className="toggled-menu-item-text">Contact</NavLink>
+                    <NavLink to="Contact" className="toggled-menu-item-text">Contact</NavLink>
                 </li>
                 <li className="toggled-menu-item" id="toggled-menu-item-login">
-                    <NavLink href="login.html" className="toggled-menu-item-text">Login</NavLink>
+                    <NavLink to="Login" className="toggled-menu-item-text">Login</NavLink>
                 </li>
             </ul>
         </div>

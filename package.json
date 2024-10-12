@@ -3,15 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "bootstrap": "^5.3.3",
-    "json-server": "^1.0.0-beta.3",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.5",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.3.0",
-    "react-router-dom": "^6.27.0"
-=======
     "@dotlottie/player-component": "^2.7.12",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -20,7 +11,6 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
->>>>>>> 6372c753c3480d9633e4c8f00700778e66f17e2a
   },
   "scripts": {
     "start": "react-scripts start",
