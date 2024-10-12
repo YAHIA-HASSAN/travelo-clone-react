@@ -1,4 +1,4 @@
-const SignUp = ()=>{
+const Destination = ()=>{
     return (
         <>
         
@@ -6,4 +6,4 @@ const SignUp = ()=>{
     )
 }
 
-export default SignUp;
+export default Destination;

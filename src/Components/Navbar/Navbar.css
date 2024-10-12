@@ -49,11 +49,7 @@
     width:25%;
     display: flex;
 }
-.nav-phone-number i{
-    width:40px;
-    display: flex;
-    align-items: center;
-}
+
 .nav-phone-number span{
     display: flex;
     align-items: center;
@@ -99,6 +95,7 @@
  }
 .nav-btn-text{
     color: white;
+    direction: none;
 }
 .nav-btn-text:hover {
     color: white;
