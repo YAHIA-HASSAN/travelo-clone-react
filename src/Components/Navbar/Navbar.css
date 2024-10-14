@@ -2,7 +2,7 @@
 
 #header{
     z-index: 10000;
-    position: sticky;
+    position: fixed;
     top: 0px;
     background: #fff;
     min-height: 70px;
@@ -89,6 +89,7 @@
     background-color:#ff4a52;
     text-align: center;
     border-radius: 5px;
+    color: white;
 }
 .nav-red-button:hover{
   background-color:#1ec6b6;

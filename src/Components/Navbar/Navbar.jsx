@@ -5,16 +5,18 @@ import { useState } from "react";
 
 
 const NavBar = ()=>{
-    const [toggleMenu, setToggleMenu] = useState(false)
+    const [isToggle, setToggle] = useState(false)
 
-    function ToggledMenu(){
-        setToggleMenu(!toggleMenu)
-        console.log(toggleMenu)
+    function handleToggle(){
+        setToggle(!isToggle)
     }
 
-    // function handleToggledMenu(){
-    //     return (({toggleMenu})=>({display: toggleMenu? "flex":"none"}))
-    // }
+    function toggleStyle() {
+        if (isToggle) {
+            return { display: 'flex' };  
+        }
+        return { display: 'none' };  
+    }
 
 
     return(
@@ -61,31 +63,31 @@ const NavBar = ()=>{
 
             </div>
 
-            <div className="toggle" onClick={ToggledMenu} /*style={()=>{handleToggledMenu()}}*/>
+            <div className="toggle" onClick={handleToggle}>
             <FaBars />
 
             </div>
 
         </nav>
-        <div id="toggled-menu">
+        <div id="toggled-menu" style={toggleStyle()}>
             <ul className="toggled-menu-list">
                 <li className="toggled-menu-item">
-                    <NavLink to="Home" className="toggled-menu-item-text">Home</NavLink>
+                    <NavLink to="Home" className="nav-link toggled-menu-item-text">Home</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink to="About" className="toggled-menu-item-text">About</NavLink>
+                    <NavLink to="About" className="nav-link toggled-menu-item-text">About</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink to="Destination" className="toggled-menu-item-text">Destination</NavLink>
+                    <NavLink to="Destination" className="nav-link toggled-menu-item-text">Destination</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink to="Feedback" className="toggled-menu-item-text">Feedback</NavLink>
+                    <NavLink to="Feedback" className="nav-link toggled-menu-item-text">Feedback</NavLink>
                 </li>
                 <li className="toggled-menu-item">
-                    <NavLink to="Contact" className="toggled-menu-item-text">Contact</NavLink>
+                    <NavLink to="Contact" className="nav-link toggled-menu-item-text">Contact</NavLink>
                 </li>
                 <li className="toggled-menu-item" id="toggled-menu-item-login">
-                    <NavLink to="Login" className="toggled-menu-item-text">Login</NavLink>
+                    <NavLink to="Login" className="nav-link toggled-menu-item-text">Login</NavLink>
                 </li>
             </ul>
         </div>
