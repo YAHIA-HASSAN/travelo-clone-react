@@ -4,10 +4,13 @@ import { NavLink } from "react-router-dom";
 import SignUp from "../Pages/SignUp";
 
 const LoginForm = ()=>{
+    function loginValidation(){
+        
+    }
     
     return(
         <div className='display-center'>
-       <form name="login-form" action="./userProfile.html" method="get" id="login-form">
+       <form name="login-form" action="/userProfile" method="get" id="login-form" onSubmit={loginValidation()}>
             <FormLogo/>
             <div id="login-input">
                 <input type="email" name="email" placeholder="name@example.com" required />
@@ -15,7 +18,6 @@ const LoginForm = ()=>{
             </div>
             <div className="buttons">
                 <input type="submit" value="Login" className="form-button"/>
-                {/* <input type="button" value="Sign Up"  onClick={handleSignUpClick} /> */}
                 <NavLink to='/SignUp' className="form-button">Sign Up</NavLink>
             </div>
         </form>
