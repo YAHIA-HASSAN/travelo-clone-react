@@ -33,7 +33,7 @@ html {
 
 .photo_text {
     position: relative;
-    color: white;
+    
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -42,7 +42,11 @@ html {
     z-index: 2;
 }
 
+.photo_text p{
+    color: rgb(255, 255, 255);
+}
 .photo_text h3 {
+    color: rgb(255, 255, 255);
     font-size: 5vw;
     margin-bottom: 20px;
 }
