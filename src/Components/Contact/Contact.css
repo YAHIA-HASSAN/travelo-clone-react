@@ -1,33 +1,33 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-        }
-        .container {
+#contact-page-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+        .content-container {
             display: flex;
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 800px;
         }
-        .form-container {
+        .content-form-container {
             flex: 2;
             margin-right: 20px;
         }
-        .form-container h2 {
+        .content-form-container h2 {
             font-size: 24px;
             font-weight: bold;
             color: #0d1b2a;
             margin-bottom: 20px;
         }
-        .form-container textarea,
-        .form-container input {
+        .content-form-container textarea,
+        .content-form-container input {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -35,14 +35,14 @@
             border-radius: 4px;
             font-size: 14px;
         }
-        .form-container .half-width {
+        .content-form-container .content-half-width {
             width: 48%;
             display: inline-block;
         }
-        .form-container .half-width:first-child {
+        .content-form-container .content-half-width:first-child {
             margin-right: 4%;
         }
-        .form-container button {
+        .content-form-container button {
             background-color: #20c997;
             color: #fff;
             padding: 10px 20px;
@@ -51,28 +51,28 @@
             cursor: pointer;
             font-size: 14px;
         }
-        .info-container {
+        .content-content-info-container {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        .info-container div {
+        .content-info-container div {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        .info-container div i {
+        .content-info-container div i {
             font-size: 20px;
             color: #0d1b2a;
             margin-right: 10px;
         }
-        .info-container div p {
+        .content-info-container div p {
             margin: 0;
             font-size: 14px;
             color: #333;
         }
-        .info-container div p span {
+        .content-info-container div p span {
             display: block;
             color: #666;
         }
