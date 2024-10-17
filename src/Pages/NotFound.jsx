@@ -1,6 +1,6 @@
 const NotFound = ()=>{
     return(
-        <h1>Page Not Found</h1>
+        <h1 style={{margin:'25vh'}}>Page Not Found</h1>
     )
 }
 export default NotFound;
