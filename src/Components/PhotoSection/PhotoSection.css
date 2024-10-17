@@ -1,21 +1,9 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.navbar {
-    z-index: 10;
-}
-
 .photo {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

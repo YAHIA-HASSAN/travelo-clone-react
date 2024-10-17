@@ -32,25 +32,28 @@
   
   .all-element {
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
+    align-items: start;
     flex-wrap: nowrap;
-    padding: 100px;
+    padding: 5vh;
+    text-align: start;
   }
   
   /* Logo and Icons (35% Width) */
   .logo-and-icons {
-    flex: 0 0 35%;
+    flex: 0 0 27%;
+    
   }
   
   /* Companies Section (15% Width) */
   .companies {
-    flex: 0 0 15%;
+    flex: 0 0 17%;
   }
   
   /* Popular Destination Section (25% Width) */
   .Popular-destination,
   .insta {
-    flex: 0 0 25%;
+    flex: 0 0 28%;
   }
   
   /* Instagram Section (25% Width) */
@@ -64,7 +67,7 @@
   /* Social Icons Layout - One Line */
   .social-icons {
     display: flex;
-    justify-content: left;
+    justify-content: start;
     gap: 10px;
     padding-top: 40px;
   }
@@ -79,11 +82,12 @@
   .component-padding-top {
     padding-top: 40px;
     padding-bottom: 40px;
+
   }
   
   .copy-right {
     text-align: center;
-    padding: 20px;
+    padding: 1vh;
     color: #aab1b7;
   }
   .copy-right a {

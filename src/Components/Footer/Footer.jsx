@@ -56,12 +56,7 @@ const Footer = () => {
               <li><NavLink to="/destinationDetails/Indonesia">Indonesia</NavLink></li>
               <li><NavLink to="/destinationDetails/America">America</NavLink></li>
               <li><NavLink to="/destinationDetails/India">India</NavLink></li>
-              <li><NavLink to="/destinationDetails/Switzerland">Switzerland</NavLink></li>
-              <li><NavLink to="/destinationDetails/Italy">Italy</NavLink></li>
-              <li><NavLink to="/destinationDetails/Canada">Canada</NavLink></li>
-              <li><NavLink to="/destinationDetails/France">France</NavLink></li>
-              <li><NavLink to="/destinationDetails/England">England</NavLink></li>
-            </ul>
+           </ul>
           </div>
         </div>
 
