@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import About from './Pages/About';
-import NavBar from "./Components/NavBar/NavBar"
+import NavBar from "./Components/NavBar/NavBar";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/LogIn';

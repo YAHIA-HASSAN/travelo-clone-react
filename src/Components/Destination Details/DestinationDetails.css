@@ -20,7 +20,7 @@
         overflow: hidden;
     }
     .container .container{
-     
+    
         flex-direction: column;
         display: flex;
     }
