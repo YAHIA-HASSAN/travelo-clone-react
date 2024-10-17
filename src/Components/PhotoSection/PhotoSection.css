@@ -12,7 +12,6 @@ html {
 
 .photo {
     position: relative;
-    background-image: url('../../assets/24c9167c6fda797eeb0f750581b038fe\ \(1\).jpg');
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
