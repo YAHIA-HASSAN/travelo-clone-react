@@ -1,7 +1,6 @@
 .display-center{
     width: 95vw;
-    position: absolute;
-    top: 20vh;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
