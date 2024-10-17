@@ -11,6 +11,7 @@ import NotFound from './Pages/NotFound';
 import Destination from './Pages/Destination';
 import Feedback from './Pages/Feedback';
 import Contact from './Pages/Contact';
+import Footer from './Components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,7 +35,9 @@ root.render(
         <Route path='/*' element={<NotFound />} />
     
       </Routes>
-    
+
+      <Footer/>
+
     </BrowserRouter>
   </React.StrictMode>
 );

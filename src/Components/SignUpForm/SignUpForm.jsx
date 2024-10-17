@@ -1,5 +1,5 @@
 import React from 'react';
-import FormLogo from "../../FormLogo/FormLogo"; 
+import FormLogo from "../FormLogo/FormLogo"; 
 import './SignUpForm.css'
 
 const SignUpForm = () => {

@@ -1,7 +1,7 @@
 import "./LoginForm.css"
 import FormLogo from "../FormLogo/FormLogo";
 import { NavLink } from "react-router-dom";
-import SignUp from "../Pages/SignUp";
+import SignUp from "../../Pages/SignUp";
 
 const LoginForm = ()=>{
     function loginValidation(){
