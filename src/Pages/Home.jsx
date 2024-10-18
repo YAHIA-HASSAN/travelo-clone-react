@@ -6,6 +6,7 @@ import Search from "../Components/Search/Search";
 import Subscribe from "../Components/Subscribe/SubscribeSection";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Testimonial from "../Components/Testimonial/Testimonial";
 
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
             <Subscribe/>
             <VideoSection />
             <TravelSection />
-            
+            <Testimonial/>
         </div>
     );
 };
