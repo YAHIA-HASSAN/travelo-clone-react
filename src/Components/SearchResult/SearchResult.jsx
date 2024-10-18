@@ -1,25 +1,26 @@
 import React from 'react';
-import './SearchResult.css'; // Import the CSS file here
+import './SearchResult.css'; 
 
 const SearchResultContainer = ({ results }) => {
     return (
         <div className="search-result-continer">
             {results.length > 0 ? (
                 results.map((result) => (
-                    <div key={result.id} className="travel-card">
-                        <div className="card-img">
-                            <img src={result.photoURL} alt={result.city} className="img-fluid" />
-                            <div className="price-tag">${result.price}</div>
-                        </div>
-                        <div className="card-body">
-                            <h5 className="card-title">{result.city}, {result.country}</h5>
-                            <p className="card-location">Travel by: {result.travelMethod}</p>
-                            <p>Hotel: {result.hotelDetails.hotelName}</p>
-                            <p>Rating: {result.hotelDetails.rating} stars</p>
-                            <p>Amenities: {result.hotelDetails.amenities.join(', ')}</p>
-                        </div>
-                        <div className="card-footer">
-                            <span><i className="fa fa-clock-o"></i> 5 Days</span>
+                    <div className="place" key={result.id}>
+                        <img
+                            alt={result.city}
+                            height="400"
+                            src={result.photoURL}
+                            width="600"
+                        />
+                        <div className="details">
+                            <div className="price">${result.price}</div>
+                            <div className="duration">5 Days</div>
+                            <h3>{result.city}</h3>
+                            <p>{result.country}</p>
+                            <div className="reviews">
+                                <i className="fas fa-star"></i> {result.hotelDetails.rating} (25 Reviews)
+                            </div>
                         </div>
                     </div>
                 ))

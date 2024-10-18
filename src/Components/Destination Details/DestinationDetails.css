@@ -125,6 +125,7 @@ body {
     overflow: hidden;
     text-align: left;
     vertical-align: top;
+    background-color: floralwhite;
 }
 
 .places .place img {
