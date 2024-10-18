@@ -5,7 +5,7 @@ const Ticket = ({i}) => {
         <div class="ticket">
             <section class="ticket-left-part">
                 <div class="ticket-header">
-                    <img src="./logo.png" alt="logo" />
+                    <img src="/logo.png" alt="logo" />
                     <h4 class="ticket-class">{i.TicketClass}</h4>
                 </div>
                 <div class="left-ticket-info">
@@ -28,7 +28,7 @@ const Ticket = ({i}) => {
             </section>
             <section class="ticket-right-part">
                 <div class="ticket-header">
-                    <img src="./logo.png" alt="logo" />
+                    <img src="/logo.png" alt="logo" />
                     <h4 class="ticket-class">{i.TicketClass}</h4>
                 </div>
                 <div class="right-ticket-info">

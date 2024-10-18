@@ -1,23 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './UserTickets.css'
 import Ticket from '../Ticket/Ticket';
 
-const UserTickets = ()=>{
-    const [tickets,setTickets]= useState([{
-        "PassangerName":"Mr. Yahia Hassan",
-        "TicketClass":"Business Class",
-        "From":"Cairo",
-        "To":"Paris",
-        "Time":"15/10/2024 15:30PM",
-        "GateNo":4,
-        "Barcode":"https://www.freepnglogos.com/uploads/barcode-png/barcode-laser-code-vector-graphic-pixabay-3.png"
-    }]);
+const UserTickets = ({ticket})=>{
+
+    const [tickets,setTickests] = useState([]);
+
+    useEffect(()=>{
+        const fetchTickets = async()=>{
+            try{
+                const response = await fetch('http://localhost:3000/userTickets');
+                const data = await response.json();
+                setTickests(data)
+            }catch(error){
+                console.error('Error fetching Tickets:', error);
+            }
+        }
+        fetchTickets();
+    },[])
+
 
     return(
         <section id="Tickets-section">
             <h2>Your Tickets</h2>
             {
-               tickets.map((T)=><Ticket i={T}/>)
+               tickets.map((T)=><Ticket i={T} key={T.id}/>)
             }
         </section>
     )

@@ -23,7 +23,7 @@ const Testimonial = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-        }, 3000); // Change testimonial every 3 seconds
+        }, 7000); // Change testimonial every 3 seconds
         return () => clearInterval(interval);
     }, [testimonials.length]);
 

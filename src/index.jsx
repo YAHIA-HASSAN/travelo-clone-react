@@ -31,7 +31,7 @@ root.render(
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/SignUp' element={<SignUp />} />
-        <Route path='/UserProfile' element={<UserProfile />} />
+        <Route path='/UserProfile/:email' element={<UserProfile />} />
         <Route path='/*' element={<NotFound />} />
     
       </Routes>
