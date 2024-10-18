@@ -277,19 +277,19 @@
     "Testimonial":[
         {
             "id": 1,
-            "imgSrc": "../img/author2.png",
+            "imgSrc": "./images/author2.png",
             "name": "John Doe",
             "feedback": "The service was excellent! I highly recommend this company."
         },
         {
             "id": 2,
-            "imgSrc": "../img/author1.png",
+            "imgSrc": "./images/author1.png",
             "name": "Jane Smith",
             "feedback": "The team went above and beyond. I'm extremely satisfied with the results."
         },
         {
             "id": 3,
-            "imgSrc": "../img/author.png",
+            "imgSrc": "./images/author.png",
             "name": "Michael Brown",
             "feedback": "Great experience from start to finish. Fantastic support and communication."
         }
