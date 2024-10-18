@@ -5,19 +5,19 @@ const SearchBar = ({ destination, setDestination, date, setDate, travelMode, set
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                required
+                
                 placeholder="Enter your destination"
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
             />
             <input
                 type="date"
-                required
+               
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
             />
             <select
-                required
+               
                 value={travelMode}
                 onChange={(e) => setTravelMode(e.target.value)}
             >

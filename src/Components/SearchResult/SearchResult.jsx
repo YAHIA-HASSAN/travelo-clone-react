@@ -15,9 +15,10 @@ const SearchResultContainer = ({ results }) => {
                         />
                         <div className="details">
                             <div className="price">${result.price}</div>
-                            <div className="duration">5 Days</div>
+                            <div className="duration">{result.dateOfTravel}</div>
                             <h3>{result.city}</h3>
                             <p>{result.country}</p>
+                            <p>{result.hotelDetails.hotelName}</p>
                             <div className="reviews">
                                 <i className="fas fa-star"></i> {result.hotelDetails.rating} (25 Reviews)
                             </div>

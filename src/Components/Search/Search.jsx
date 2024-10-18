@@ -17,11 +17,10 @@ const Search = () => {
         setError('');
 
         try {
-            // Convert the date into a more suitable format for the search if needed
-            const formattedDate = date.split('-').reverse().join('-'); // dd-mm-yyyy
+            const formattedDate = date? date.split('-').reverse().join('-'):''; 
 
-            // Fetch destinations from API
-            const response = await fetch(`http://localhost:3000/destinations?city=${destination}&dateOfTravel=${formattedDate}&travelMethod=${travelMode}`);
+            
+            const response = await fetch(`http://localhost:3000/destinations?city=${destination.toUpperCase()}&dateOfTravel=${formattedDate}&travelMethod=${travelMode}`);
             
             if (!response.ok) {
                 throw new Error('Failed to fetch destinations');
@@ -31,7 +30,7 @@ const Search = () => {
             if (data.length === 0) {
                 setError('No destinations found for your search criteria.');
             } else {
-                setSearchResults(data); // Set the API response as the search results
+                setSearchResults(data);
             }
         } catch (err) {
             setError(err.message);
