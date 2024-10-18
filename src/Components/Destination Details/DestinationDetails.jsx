@@ -4,7 +4,7 @@ import "./DestinationDetails.css"; // Make sure to copy your CSS to this file
 const DestinationDetails = () => {
   return (
     <div>
-      <div className="container">
+      <div className="DestinationDetails-container">
         <div className="section">
           <h2>Description</h2>
           <p>
@@ -25,6 +25,8 @@ const DestinationDetails = () => {
             <br />
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
+            humour, or randomised words. There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
             humour, or randomised words.
           </p>
           <p>
@@ -32,12 +34,16 @@ const DestinationDetails = () => {
             <br />
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
+            humour, or randomised words. There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
             humour, or randomised words.
           </p>
           <p>
             <strong>Day-03</strong>
             <br />
             There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words. There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words.
           </p>
