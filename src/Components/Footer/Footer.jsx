@@ -15,6 +15,13 @@ import insta6 from '../../assets/insta6.webp';
 import './Footer.css'
 
 const Footer = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+};
   return (
     <footer className="footer">
       <div className="all-element">
@@ -53,9 +60,9 @@ const Footer = () => {
           <h3>Popular Destination</h3>
           <div className="component-padding-top">
             <ul>
-              <li><NavLink to="/destinationDetails/Indonesia">Indonesia</NavLink></li>
-              <li><NavLink to="/destinationDetails/America">America</NavLink></li>
-              <li><NavLink to="/destinationDetails/India">India</NavLink></li>
+              <li><NavLink to="/Destination" onClick={handleScrollToTop()}>Indonesia</NavLink></li>
+              <li><NavLink to="/Destination" onClick={handleScrollToTop()}>America</NavLink></li>
+              <li><NavLink to="/Destination" onClick={handleScrollToTop()}>India</NavLink></li>
            </ul>
           </div>
         </div>
