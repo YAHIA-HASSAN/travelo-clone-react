@@ -22,7 +22,7 @@ const LoginForm = () => {
             }
         };
         fetchUserData();
-    }, []);
+    }, [email]);
 
     const loginValidation = (e) => {
         e.preventDefault();
