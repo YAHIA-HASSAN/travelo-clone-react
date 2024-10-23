@@ -15,7 +15,14 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    // Create the mailto link with form data
+    const mailtoLink = `mailto:hadirhussien14@gmail.com?subject=Feedback from ${formData.firstname} ${formData.lastname}&body=${encodeURIComponent(
+      `Name: ${formData.firstname} ${formData.lastname}\nFeedback: ${formData.feedback}\nSuggestions: ${formData.suggestions}`
+    )}`;
+
+    // Open the mailto link to send the email
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -98,7 +105,6 @@ const FeedbackForm = () => {
         </div>
       </form>
     </div>
-    
   );
 }
 

@@ -42,11 +42,13 @@
 .content-form-container .content-half-width {
     width: 48%;
     display: inline-block;
+    margin-left: 15px;
 }
 
 .content-form-container .content-half-width:first-child {
-    margin-right: 4%;
+    margin-left: -20px;
 }
+
 
 .content-form-container button {
     background-color: #20c997;

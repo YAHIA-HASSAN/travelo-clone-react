@@ -1,7 +1,40 @@
-import React from "react";
-import "./DestinationDetails.css"; // Make sure to copy your CSS to this file
+import React, { useState } from "react";
+import "./DestinationDetails.css"; 
 
 const DestinationDetails = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    message: ''
+  });
+
+  const [email, setEmail] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+    const { name, phone, message } = formData;
+    const mailtoLink = `mailto:hadirhussien14@gmail.com?subject=Join Inquiry&body=${encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\n\nMessage: ${message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:hadirhussien14@gmail.com?subject=Newsletter Subscription&body=${encodeURIComponent(
+      `Please add me to your newsletter list. My email is: ${email}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div>
       <div className="DestinationDetails-container">
@@ -53,17 +86,17 @@ const DestinationDetails = () => {
         <br />
         <div className="section">
           <h2>Contact for join</h2>
-          <form>
+          <form onSubmit={handleSendEmail}>
             <div className="form-row">
               <div className="form-group">
-                <input placeholder="Your Name" type="text" />
+                <input placeholder="Your Name" type="text" name="name" value={formData.name} onChange={handleChange}/>
               </div>
               <div className="form-group">
-                <input placeholder="Phone no." type="text" />
+                <input placeholder="Phone no." type="text" name="phone" value={formData.phone} onChange={handleChange}/>
               </div>
             </div>
             <div className="form-group">
-              <textarea placeholder="Message"></textarea>
+              <textarea placeholder="Message" name="message" value={formData.message} onChange={handleChange}></textarea>
             </div>
             <div className="form-group">
               <button type="submit">Submit</button>
@@ -76,10 +109,12 @@ const DestinationDetails = () => {
         <p>
           Subscribe newsletter to get offers and about new places to discover.
         </p>
-        <div>
-          <input placeholder="Your mail" type="email" />
-          <button>Subscribe</button>
-        </div>
+        <form onSubmit={handleSubscribe}>
+          <div>
+            <input placeholder="Your mail" type="email" value={email} onChange={handleEmailChange} />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
       <div className="places">
         <h2>More Places</h2>
