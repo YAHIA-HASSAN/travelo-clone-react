@@ -9,13 +9,14 @@ const LoginForm = () => {
     const [password, setPassword] = useState("");
     const [userData, setUserData] = useState(null);
 
-    // Fetch user data (email and password) from the API
+
     useEffect(() => {
         const fetchUserData = async () => {
             try {
                 const response = await fetch("http://localhost:3000/userData?email="+email);
                 const data = await response.json();
-                setUserData(data[0]); // Set the user data
+                setUserData(data[0]); 
+            
             } catch (error) {
                 console.error("Error fetching user data:", error);
             }
@@ -24,15 +25,14 @@ const LoginForm = () => {
     }, []);
 
     const loginValidation = (e) => {
-        e.preventDefault(); // Prevent form submission from reloading the page
+        e.preventDefault();
 
-        // Validate email and password from fetched userData
         if (userData && email === userData.email && password === userData.password) {
-            // Example: Valid credentials
-            localStorage.setItem("isLoggedIn", "true"); // Save login state
-            navigate("/userProfile/"+email); // Redirect to user profile
+    
+            localStorage.setItem("isLoggedIn", "true"); 
+            navigate("/userProfile/"+email); 
         } else {
-            alert("Invalid email or password"); // Error handling for invalid credentials
+            alert("Invalid email or password");
         }
     };
 
