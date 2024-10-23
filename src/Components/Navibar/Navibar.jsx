@@ -1,9 +1,9 @@
 import { FaBars, FaPhone, FaSearch } from "react-icons/fa";
-import "./NavBar.css";
+import "./Navibar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
+const Navibar = () => {
     const [isToggle, setToggle] = useState(false);
 
     function handleToggle() {
@@ -93,4 +93,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navibar;

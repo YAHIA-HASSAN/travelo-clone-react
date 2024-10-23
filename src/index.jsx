@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import About from './Pages/About';
-import NavBar from "./Components/NavBar/NavBar";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/LogIn';
@@ -12,6 +11,7 @@ import Destination from './Pages/Destination';
 import Feedback from './Pages/Feedback';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer/Footer';
+import Navibar from './Components/Navibar/Navibar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +19,7 @@ root.render(
 
     <BrowserRouter>
 
-      <NavBar />
+      <Navibar />
     
       <Routes>
 
